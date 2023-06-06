@@ -1,51 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock & EDM Festival</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="contenedor contenido-header">
-            <h1>Rock & ED Festivak</h1>
-            <nav class="navegacion-principal">
-                <a href="#">Line UP</a>
-                <a href="#">Boletos</a>
-                <a href="#">Galeria</a>
-            </nav>
-        </div>
+      <div class="contenedor contenido-header">
+        <h1>Rock & ED Festivak</h1>
+        <nav class="navegacion-principal">
+          <a href="#">Line UP</a>
+          <a href="#">Boletos</a>
+          <a href="#">Galeria</a>
+        </nav>
+      </div>
     </header>
     <div class="video">
-        <div class="overflay">
-            <div class="contenedor contenido-video">
-                <h2>Rock & EDM Festival</h2>
-                <p>Mayo 2023, Lima, Perú</p>
-            </div>
+      <div class="overflay">
+        <div class="contenedor contenido-video">
+          <h2>Rock & EDM Festival</h2>
+          <p>Mayo 2023, Lima, Perú</p>
         </div>
-        <video autoplay muted loop >
-            <source src="video/concierto.mp4" type="video/mp4">
-            <source src="video/concierto.ogg" type="video/mp4">
-            <source src="video/concierto.webm" type="video/mp4">
-        </video>
+      </div>
+      <video autoplay muted loop>
+        <source src="video/concierto.mp4" type="video/mp4" />
+        <source src="video/concierto.ogg" type="video/mp4" />
+        <source src="video/concierto.webm" type="video/mp4" />
+      </video>
     </div>
-    
-    
+
     <section class="contenedor sobre-festival">
-        <div class="imagen">
-            <img src="img/imagen_vocalista.jpg" alt="Imagen vocalista festival">
-        </div>
-        <div class="contenido-festival">
-            <h2>Rock & EDM Festival</h2>
-            <p class="fecha">Mayo 2023, Lima-Perú</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam excepturi illum expedita odio maiores provident nemo. Assumenda, soluta maxime nisi nulla nesciunt nihil quis, et ad amet voluptates enim vero!</p>
-        </div>
+      <div class="imagen">
+        <picture>
+          <source srcset="build/img/imagen_vocalista.avif" type="image/avif" />
+          <source srcset="build/img/imagen_vocalista.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/imagen_vocalista.jpg"
+            type="imagen_vocalista"
+          />
+        </picture>
+      </div>
+      <div class="contenido-festival">
+        <h2>Rock & EDM Festival</h2>
+        <p class="fecha">Mayo 2023, Lima-Perú</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+          excepturi illum expedita odio maiores provident nemo. Assumenda,
+          soluta maxime nisi nulla nesciunt nihil quis, et ad amet voluptates
+          enim vero!
+        </p>
+      </div>
     </section>
 
-</body>
+    <section class="lineup">
+      <h3>Line Up</h3>
+      <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Muse</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Breaking Benjamin</span>
+                    </li>
+                    <li>
+                        17:00 | <span>30 Seconds to Mars</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Dash Berlin</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Fedde Legrand</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Audien</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor -->
+
+
+        <p class="dia">Sábado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Red Hot Chili Peppers</span>
+                    </li>
+                    <li>
+                        22:00 | <span>The Killers</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deftones</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Limp Bizkit</span>
+                    </li>
+                    
+                    <li>
+                        18:00 | <span>Papa Roach</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Lamb of God</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Paul Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Eric Prdyz</span>
+                    </li>
+
+                    <li>
+                        18:00 | <span>Ferry Corsten</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div> <!--.escenario-->
+        </div> <!--.escenarios-contenedor -->
+
+    </section>
+  </body>
 </html>
